@@ -27,6 +27,14 @@ Still in early stages and not at the point of running anything yet.
     - There is some good dataset info [here](https://github.com/archinetai/audio-data-pytorch). Particularly YoutubeDataset sounds interesting and potentially useful
 - [ ] Implement [w2v-BERT](https://arxiv.org/pdf/2108.06209.pdf)
     - [ ] Implement w2v-BERT network
+      - [ ] Check experimental setup in [this](https://arxiv.org/abs/2010.10504) paper, which matches w2v-BERT
+      - [ ] Implement feature encoder
+      - [ ] Implement contrastive module
+        - [ ] Implement [conformer block](https://arxiv.org/abs/2005.08100)
+          - should be able to just use [torchaudio.models.Conformer](https://pytorch.org/audio/main/generated/torchaudio.models.Conformer.html#torchaudio.models.Conformer)
+      - [ ] Implement masked prediction module
+      - [ ] Implement masked prediction loss
+      - [ ] Implement contrastive loss
     - [ ] Implement w2v-BERT data module
     - [ ] Implement w2v-BERT training
 - [ ] Implement [soundstream](https://arxiv.org/abs/2107.03312)
